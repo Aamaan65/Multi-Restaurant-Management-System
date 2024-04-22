@@ -3,6 +3,7 @@ Overview
 
 This repository hosts the code for a comprehensive Multi-Restaurant Management System designed to streamline the operations of multiple restaurant units. Leveraging a robust stack of web technologies including MySQL, PHP, HTML, JavaScript, and CSS, this system offers a unified platform for managing menus, orders, staff, and customer interactions across various restaurant locations.
 
+-----------------------------------------------------------------
 
 
 Features
@@ -19,6 +20,7 @@ Reporting Dashboard: Comprehensive analytics and reporting tools that provide in
 
 Customer Management: Features for handling customer profiles, feedback, and communication, enhancing customer service and engagement.
 
+------------------------------------------------------------------
 
 
 Technologies Used
