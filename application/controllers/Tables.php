@@ -59,6 +59,7 @@ class Tables extends Admin_Controller
 		} // /foreach
 
 		echo json_encode($result);
+		exit();
 	}
 
 	public function create()
@@ -103,6 +104,7 @@ class Tables extends Admin_Controller
         }
 
         echo json_encode($response);
+		exit();
 	}
 
 	public function fetchTableDataById($id = null)
@@ -110,6 +112,7 @@ class Tables extends Admin_Controller
 		if($id) {
 			$data = $this->model_tables->getTableData($id);
 			echo json_encode($data);
+			exit();
 		}
 		
 	}
@@ -161,6 +164,7 @@ class Tables extends Admin_Controller
 		}
 
 		echo json_encode($response);
+		exit();
 	}
 
 	public function remove()
@@ -189,6 +193,7 @@ class Tables extends Admin_Controller
 		}
 
 		echo json_encode($response);
+		exit();
 	}
 
 }
