@@ -1,11 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.6.5.2
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: May 25, 2021 at 07:20 PM
--- Server version: 5.6.21
--- PHP Version: 5.6.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -129,15 +121,18 @@ CREATE TABLE `orders` (
 -- Dumping data for table `orders`
 --
 
-INSERT INTO `orders` (`id`, `bill_no`, `date_time`, `gross_amount`, `service_charge_rate`, `service_charge_amount`, `vat_charge_rate`, `vat_charge_amount`, `discount`, `net_amount`, `user_id`, `table_id`, `paid_status`, `store_id`) VALUES
-(1, 'CDSTRO-17AD', '1621937009', '14.00', '', '0', '13', '1.82', '0', '15.82', 1, 3, 1, 0),
-(2, 'CDSTRO-E230', '1621941718', '6.00', '', '0', '13', '0.78', '0', '6.78', 1, 6, 1, 0),
-(3, 'CDSTRO-32CD', '1621951601', '9.00', '3', '0.27', '13', '1.17', '0', '10.44', 1, 30, 2, 0),
-(4, 'CDSTRO-D1E6', '1621954896', '29.79', '3', '0.89', '13', '3.87', '0', '34.55', 1, 23, 2, 0),
-(5, 'CDSTRO-8C4D', '1621958450', '36.44', '3', '1.09', '13', '4.74', '1', '41.27', 1, 12, 1, 0),
-(6, 'CDSTRO-9507', '1621960539', '18.99', '3', '0.57', '13', '2.47', '0', '22.03', 1, 24, 1, 0),
-(7, 'CDSTRO-8B2C', '1621962871', '44.34', '3', '1.33', '13', '5.76', '1', '50.43', 1, 37, 1, 0),
-(8, 'CDSTRO-0E73', '1621963107', '9.85', '3', '0.30', '13', '1.28', '0', '11.43', 5, 33, 1, 16);
+INSERT INTO `orders` 
+(`id`, `bill_no`, `date_time`, `gross_amount`, `service_charge_rate`, `service_charge_amount`, `vat_charge_rate`, `vat_charge_amount`, `discount`, `net_amount`, `user_id`, `table_id`, `paid_status`, `store_id`) 
+VALUES
+(1, 'CDSTRO-17AD', '1718083609', '14.00', '', '0', '13', '1.82', '0', '15.82', 1, 3, 1, 0),
+(2, 'CDSTRO-E230', '1718088318', '6.00', '', '0', '13', '0.78', '0', '6.78', 1, 6, 1, 0),
+(3, 'CDSTRO-32CD', '1718098201', '9.00', '3', '0.27', '13', '1.17', '0', '10.44', 1, 30, 2, 0),
+(4, 'CDSTRO-D1E6', '1718101496', '29.79', '3', '0.89', '13', '3.87', '0', '34.55', 1, 23, 2, 0),
+(5, 'CDSTRO-8C4D', '1718105050', '36.44', '3', '1.09', '13', '4.74', '1', '41.27', 1, 12, 1, 0),
+(6, 'CDSTRO-9507', '1718107139', '18.99', '3', '0.57', '13', '2.47', '0', '22.03', 1, 24, 1, 0),
+(7, 'CDSTRO-8B2C', '1718109471', '44.34', '3', '1.33', '13', '5.76', '1', '50.43', 1, 37, 1, 0),
+(8, 'CDSTRO-0E73', '1718109707', '9.85', '3', '0.30', '13', '1.28', '0', '11.43', 5, 33, 1, 16);
+
 
 -- --------------------------------------------------------
 
@@ -252,8 +247,8 @@ INSERT INTO `stores` (`id`, `name`, `active`) VALUES
 (3, 'Crafty Plates', 1),
 (4, 'Burgrill', 1),
 (5, 'The Gourmet Kitchen', 1),
-(6, 'Pies n Thighs', 1),
-(7, 'Spago Restaurant', 1),
+(6, 'Sharrma Ji ka Kitchen', 1),
+(7, 'Balame da Dhaba', 1),
 (8, 'Theo\'s Crazy Corner', 1),
 (9, 'Manressa', 1),
 (10, 'Carthay Circle Restaurant', 1),
