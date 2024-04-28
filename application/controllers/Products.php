@@ -82,6 +82,7 @@ class Products extends Admin_Controller
 		} // /foreach
 
 		echo json_encode($result);
+        exit();
 	}	
     
     /*
@@ -346,6 +347,7 @@ class Products extends Admin_Controller
         }
 
         echo json_encode($response);
+        exit();
 	}
 
 }
