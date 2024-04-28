@@ -45,6 +45,7 @@ class Category extends Admin_Controller
 		} // /foreach
 
 		echo json_encode($result);
+		exit();
 	}
 
 	public function create()
@@ -84,6 +85,7 @@ class Category extends Admin_Controller
         }
 
         echo json_encode($response);
+		exit();
 	}
 
 	public function fetchCategoryDataById($id = null)
@@ -91,6 +93,7 @@ class Category extends Admin_Controller
 		if($id) {
 			$data = $this->model_category->getCategoryData($id);
 			echo json_encode($data);
+			exit();
 		}
 		
 	}
@@ -138,6 +141,7 @@ class Category extends Admin_Controller
 		}
 
 		echo json_encode($response);
+		exit();
 	}
 
 	public function remove()
@@ -166,6 +170,7 @@ class Category extends Admin_Controller
 		}
 
 		echo json_encode($response);
+		exit();
 	}
 
 }
