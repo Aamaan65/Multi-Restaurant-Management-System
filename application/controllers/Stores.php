@@ -53,6 +53,7 @@ class Stores extends Admin_Controller
 		} // /foreach
 
 		echo json_encode($result);
+		exit();
 	}
 
 	public function create()
@@ -92,6 +93,7 @@ class Stores extends Admin_Controller
         }
 
         echo json_encode($response);
+		exit();
 	}
 
 	public function fetchStoresDataById($id = null)
@@ -99,6 +101,7 @@ class Stores extends Admin_Controller
 		if($id) {
 			$data = $this->model_stores2->getStoresData($id);
 			echo json_encode($data);
+			exit();
 		}
 		
 	}
@@ -146,6 +149,7 @@ class Stores extends Admin_Controller
 		}
 
 		echo json_encode($response);
+		exit();
 	}
 
 	public function remove()
@@ -174,6 +178,7 @@ class Stores extends Admin_Controller
 		}
 
 		echo json_encode($response);
+		exit();
 	}
 
 }
