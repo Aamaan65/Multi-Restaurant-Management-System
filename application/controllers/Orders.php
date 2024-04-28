@@ -94,6 +94,7 @@ class Orders extends Admin_Controller
 		} // /foreach
 
 		echo json_encode($result);
+		exit();
 	}
 
 	/*
@@ -150,6 +151,7 @@ class Orders extends Admin_Controller
 		if($product_id) {
 			$product_data = $this->model_products->getProductData($product_id);
 			echo json_encode($product_data);
+			exit();
 		}
 	}
 
@@ -162,6 +164,7 @@ class Orders extends Admin_Controller
 	{
 		$products = $this->model_products->getActiveProductData();
 		echo json_encode($products);
+		exit();
 	}
 
 	/*
@@ -268,6 +271,7 @@ class Orders extends Admin_Controller
         }
 
         echo json_encode($response); 
+		exit();
 	}
 
 	/*
